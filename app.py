@@ -25,5 +25,7 @@ def generate_qr():
     img.save('static/qrcode.png')
 
     return render_template('result.html')
+if __name__ == "__main__":
+    app.run(port=3000, debug=True)
 
 
